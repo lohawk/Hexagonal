@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>65b3e764-c292-4c3d-b739-41706d2cce9a</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hexagonal.Application.Impl\Hexagonal.Application.Impl.csproj" />
+    <ProjectReference Include="..\Hexagonal.Application.Interface\Hexagonal.Application.Interface.csproj" />
+    <ProjectReference Include="..\Hexagonal.Persistence.InMemory\Hexagonal.Persistence.InMemory.csproj" />
+  </ItemGroup>
+
+
+</Project>

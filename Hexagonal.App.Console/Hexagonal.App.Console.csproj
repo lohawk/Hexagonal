@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hexagonal.Application.Impl\Hexagonal.Application.Impl.csproj" />
+    <ProjectReference Include="..\Hexagonal.Application.Interface\Hexagonal.Application.Interface.csproj" />
+    <ProjectReference Include="..\Hexagonal.Persistence.InMemory\Hexagonal.Persistence.InMemory.csproj" />
+  </ItemGroup>
+
+</Project>
