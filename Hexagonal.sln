@@ -19,17 +19,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.Persistence.InMem
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{7AABB368-F1CA-49AD-B160-D31AB6BEADF3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{9308FD80-B800-42EA-AA70-E16A7A1D5742}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{9308FD80-B800-42EA-AA70-E16A7A1D5742}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.Application.Interface", "Application\Hexagonal.Application.Interface\Hexagonal.Application.Interface.csproj", "{699D6A4F-43F2-4BB0-A532-8B90CCA3B692}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.Domain.Handlers", "Domain\Hexagonal.Domain.Handlers\Hexagonal.Domain.Handlers.csproj", "{DD72416D-7417-4469-8650-5421E2854541}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.Business.Handlers", "Domain\Hexagonal.Domain.Handlers\Hexagonal.Business.Handlers.csproj", "{DD72416D-7417-4469-8650-5421E2854541}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.Domain.Core", "Domain\Hexagonal.Domain.Core\Hexagonal.Domain.Core.csproj", "{0F7E3405-1938-4C16-8E33-D7E11B5D7D16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.Business.Core", "Domain\Hexagonal.Domain.Core\Hexagonal.Business.Core.csproj", "{0F7E3405-1938-4C16-8E33-D7E11B5D7D16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hexagonal.Application.Impl", "Application\Hexagonal.Application.Impl\Hexagonal.Application.Impl.csproj", "{249A602E-9458-4B25-8D84-6AE9F7E01359}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.Application.Impl", "Application\Hexagonal.Application.Impl\Hexagonal.Application.Impl.csproj", "{249A602E-9458-4B25-8D84-6AE9F7E01359}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hexagonal.App.Web", "Apps\Hexagonal.App.Web\Hexagonal.App.Web.csproj", "{0815C30B-38CA-457F-B707-BC3435C0C29B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.App.Web", "Apps\Hexagonal.App.Web\Hexagonal.App.Web.csproj", "{0815C30B-38CA-457F-B707-BC3435C0C29B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
