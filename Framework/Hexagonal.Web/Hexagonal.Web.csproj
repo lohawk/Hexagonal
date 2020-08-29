@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Application\Hexagonal.Application.Interface\Hexagonal.Application.Interface.csproj" />
+    <ProjectReference Include="..\..\Application\Hexagonal.Application.Interface\Hexagonal.Application.Interface.csproj" />
   </ItemGroup>
 
 </Project>
