@@ -1,6 +1,7 @@
 using Hexagonal.Application.Interface;
 using Hexagonal.Persistence.InMemory;
 using Hexagonal.Persistence.Interface;
+using Hexagonal.Web.Controllers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -24,6 +25,9 @@ namespace Hexagonal.App.Web
             services.AddControllers();
             services.AddSingleton<IHandleItemState, InMemoryStore>();
             services.AddSingleton<IApplication, Application.Impl.Application>();
+
+            var assembly = typeof(ItemController).Assembly;
+            services.AddMvc().AddApplicationPart(assembly).AddControllersAsServices();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

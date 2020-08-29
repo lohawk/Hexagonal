@@ -2,7 +2,7 @@
 using Hexagonal.Application.Interface.Item;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Hexagonal.App.Web.Controllers
+namespace Hexagonal.Web.Controllers
 {
     [ApiController]
     [Route("[controller]")]
