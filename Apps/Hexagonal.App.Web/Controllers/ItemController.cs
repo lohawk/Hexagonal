@@ -17,14 +17,14 @@ namespace Hexagonal.App.Web.Controllers
         [Route("{id}")]
         public IActionResult GetItem(int id)
         {
-            var resp = _app.Dispatch<ItemQuery, ItemResults>(new ItemQuery(id));
+            var resp = _app.Dispatch<ItemQuery, ItemResultsDTO>(new ItemQuery(id));
             return resp == null ? NotFound() : (IActionResult)Ok(resp);
         }
 
         [HttpPost]
         public IActionResult CreateItem(CreateItem req)
         {
-            var resp = _app.Dispatch<CreateItem, ItemResult>(req);
+            var resp = _app.Dispatch<CreateItem, ItemDTO>(req);
             return resp == null ? Conflict() : (IActionResult)Ok(resp);
         }
     }

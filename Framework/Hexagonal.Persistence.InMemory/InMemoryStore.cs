@@ -1,5 +1,4 @@
-﻿using Hexagonal.Domain.Core;
-using Hexagonal.Persistence.Interface;
+﻿using Hexagonal.Persistence.Interface;
 using System;
 using System.Collections.Generic;
 
@@ -7,15 +6,15 @@ namespace Hexagonal.Persistence.InMemory
 {
     public class InMemoryStore : IHandleItemState
     {
-        private readonly Dictionary<int, Item> _store = new Dictionary<int, Item>();
+        private readonly Dictionary<int, PersistedItem> _store = new Dictionary<int, PersistedItem>();
 
-        public Item GetItem(int id)
+        public PersistedItem GetItem(int id)
         {
             if (_store.ContainsKey(id)) return _store[id];
             throw new InvalidOperationException();
         }
 
-        public Item InsertItem(Item item)
+        public PersistedItem InsertItem(PersistedItem item)
         {
             if (item.Id != 0) throw new InvalidOperationException();
 

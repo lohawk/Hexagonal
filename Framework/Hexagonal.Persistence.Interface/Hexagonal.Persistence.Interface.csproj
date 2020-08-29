@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Hexagonal.Domain.Handlers\Hexagonal.Domain.Handlers.csproj" />
   </ItemGroup>
 
 </Project>

@@ -5,15 +5,15 @@ namespace Hexagonal.Application.Impl.Item
 {
     public static class ItemQueries
     {
-        internal static ItemResults Query(ItemQuery query, IHandleItemState stateManager)
+        internal static ItemResultsDTO Query(ItemQuery query, IHandleItemState stateManager)
         {
             var item = stateManager.GetItem(query.Id);
             if (item == null) return null;
 
-            return new ItemResults
+            return new ItemResultsDTO
             {
                 Results = new[] {
-                    new ItemResult { Id = item.Id, Data = item.Data}
+                    new ItemDTO { Id = item.Id, Data = item.Data}
                 }
             };
         }
