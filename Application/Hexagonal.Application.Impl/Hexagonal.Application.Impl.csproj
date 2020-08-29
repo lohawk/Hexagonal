@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Application\Hexagonal.Application.Interface\Hexagonal.Application.Interface.csproj" />
+    <ProjectReference Include="..\..\Business\Hexagonal.Business.Handlers\Hexagonal.Business.Handlers.csproj" />
     <ProjectReference Include="..\..\Framework\Hexagonal.Persistence.Interface\Hexagonal.Persistence.Interface.csproj" />
   </ItemGroup>
 

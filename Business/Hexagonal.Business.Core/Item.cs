@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Hexagonal.Domain.Core
+namespace Hexagonal.Business.Core
 {
     public class Item
     {

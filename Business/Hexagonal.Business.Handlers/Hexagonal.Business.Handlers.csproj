@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Hexagonal.Domain.Core\Hexagonal.Business.Core.csproj" />
+    <ProjectReference Include="..\Hexagonal.Business.Core\Hexagonal.Business.Core.csproj" />
   </ItemGroup>
 
 </Project>
