@@ -1,7 +1,7 @@
-﻿using Hexagonal.Application.Interface.Item;
+﻿using Hexagonal.Business.Interface.Item;
 using Hexagonal.Persistence.Interface;
 
-namespace Hexagonal.Application.Impl.Item
+namespace Hexagonal.Business.Impl.Item
 {
     public static class ItemQueries
     {

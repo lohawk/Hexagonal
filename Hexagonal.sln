@@ -3,35 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cmd", "Cmd", "{7E055570-92A0-48E6-9571-893FEB440AD3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{7E055570-92A0-48E6-9571-893FEB440AD3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.App.Console", "Apps\Hexagonal.App.Console\Hexagonal.App.Console.csproj", "{CA9FB7CF-69ED-420A-B7F1-5ED376CD0BF4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{77B52602-26AC-4FA2-A65F-1147493E01DC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shell", "Shell", "{77B52602-26AC-4FA2-A65F-1147493E01DC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{702FFDEA-1685-47A4-8F5D-4BB604B89088}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{AD24F3C1-CB43-4FFD-9C95-05678952206F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.Persistence.Interface", "Framework\Hexagonal.Persistence.Interface\Hexagonal.Persistence.Interface.csproj", "{ACA84DCE-3BF5-4141-80DA-440675B2B98B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.Persistence.Interface", "Shell\Hexagonal.Persistence.Interface\Hexagonal.Persistence.Interface.csproj", "{ACA84DCE-3BF5-4141-80DA-440675B2B98B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.Persistence.InMemory", "Framework\Hexagonal.Persistence.InMemory\Hexagonal.Persistence.InMemory.csproj", "{63E48604-C789-40FC-9E81-BB8A078A198D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.Persistence.InMemory", "Shell\Hexagonal.Persistence.InMemory\Hexagonal.Persistence.InMemory.csproj", "{63E48604-C789-40FC-9E81-BB8A078A198D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{7AABB368-F1CA-49AD-B160-D31AB6BEADF3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{7AABB368-F1CA-49AD-B160-D31AB6BEADF3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{9308FD80-B800-42EA-AA70-E16A7A1D5742}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{9308FD80-B800-42EA-AA70-E16A7A1D5742}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.Application.Interface", "Application\Hexagonal.Application.Interface\Hexagonal.Application.Interface.csproj", "{699D6A4F-43F2-4BB0-A532-8B90CCA3B692}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.Business.Interface", "Business\Hexagonal.Business.Interface\Hexagonal.Business.Interface.csproj", "{699D6A4F-43F2-4BB0-A532-8B90CCA3B692}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.Application.Impl", "Application\Hexagonal.Application.Impl\Hexagonal.Application.Impl.csproj", "{249A602E-9458-4B25-8D84-6AE9F7E01359}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.Business.Impl", "Business\Hexagonal.Business.Impl\Hexagonal.Business.Impl.csproj", "{249A602E-9458-4B25-8D84-6AE9F7E01359}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.App.Web", "Apps\Hexagonal.App.Web\Hexagonal.App.Web.csproj", "{0815C30B-38CA-457F-B707-BC3435C0C29B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.Business.Core", "Business\Hexagonal.Business.Core\Hexagonal.Business.Core.csproj", "{603AF8CB-F2AF-4BC7-92A5-D8A9F6F8E05C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.Core", "Core\Hexagonal.Core\Hexagonal.Core.csproj", "{603AF8CB-F2AF-4BC7-92A5-D8A9F6F8E05C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.Business.Handlers", "Business\Hexagonal.Business.Handlers\Hexagonal.Business.Handlers.csproj", "{05E332B7-95EC-4202-9E5E-AA21B34D497F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.Core.Handlers", "Core\Hexagonal.Core.Handlers\Hexagonal.Core.Handlers.csproj", "{05E332B7-95EC-4202-9E5E-AA21B34D497F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.Web", "Framework\Hexagonal.Web\Hexagonal.Web.csproj", "{44058B61-F841-4DD0-A2E4-60BA6FDF1CF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.Web", "Shell\Hexagonal.Web\Hexagonal.Web.csproj", "{44058B61-F841-4DD0-A2E4-60BA6FDF1CF9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

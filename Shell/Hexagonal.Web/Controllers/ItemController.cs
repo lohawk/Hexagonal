@@ -1,5 +1,5 @@
-﻿using Hexagonal.Application.Interface;
-using Hexagonal.Application.Interface.Item;
+﻿using Hexagonal.Business.Interface;
+using Hexagonal.Business.Interface.Item;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Hexagonal.Web.Controllers

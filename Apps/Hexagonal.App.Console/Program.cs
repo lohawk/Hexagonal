@@ -1,4 +1,5 @@
-﻿using Hexagonal.Application.Interface.Item;
+﻿using Hexagonal.Business.Impl;
+using Hexagonal.Business.Interface.Item;
 using Hexagonal.Persistence.InMemory;
 
 namespace Hexagonal.App.Console
@@ -8,7 +9,7 @@ namespace Hexagonal.App.Console
         static void Main(string[] args)
         {
             // Wire up the dependency on the application layer
-            var app = new Application.Impl.Application(new InMemoryStore());
+            var app = new Application(new InMemoryStore());
 
             System.Console.WriteLine("Creating and retreiving an item");
 

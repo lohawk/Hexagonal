@@ -1,7 +1,7 @@
-﻿using Hexagonal.Business.Core;
-using System;
+﻿using System;
+using Hexagonal.Core;
 
-namespace Hexagonal.Business.Handlers
+namespace Hexagonal.Core.Handlers
 {
     public static class ItemCommandHandlers
     {

@@ -1,4 +1,4 @@
-using Hexagonal.Application.Interface;
+using Hexagonal.Business.Interface;
 using Hexagonal.Persistence.InMemory;
 using Hexagonal.Persistence.Interface;
 using Hexagonal.Web.Controllers;
@@ -24,7 +24,7 @@ namespace Hexagonal.App.Web
         {
             services.AddControllers();
             services.AddSingleton<IHandleItemState, InMemoryStore>();
-            services.AddSingleton<IApplication, Application.Impl.Application>();
+            services.AddSingleton<IApplication, Business.Impl.Application>();
 
             var assembly = typeof(ItemController).Assembly;
             services.AddMvc().AddApplicationPart(assembly).AddControllersAsServices();

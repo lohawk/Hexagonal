@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Hexagonal.Application.Interface
+﻿namespace Hexagonal.Business.Interface
 {
     public interface IApplication
     {

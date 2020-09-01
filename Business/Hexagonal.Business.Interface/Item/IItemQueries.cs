@@ -1,4 +1,4 @@
-﻿namespace Hexagonal.Application.Interface.Item
+﻿namespace Hexagonal.Business.Interface.Item
 {
     public interface IItemQueries
     {
