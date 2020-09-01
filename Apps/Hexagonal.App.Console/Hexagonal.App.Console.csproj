@@ -6,9 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Application\Hexagonal.Application.Impl\Hexagonal.Application.Impl.csproj" />
-    <ProjectReference Include="..\..\Application\Hexagonal.Application.Interface\Hexagonal.Application.Interface.csproj" />
-    <ProjectReference Include="..\..\Framework\Hexagonal.Persistence.InMemory\Hexagonal.Persistence.InMemory.csproj" />
+    <ProjectReference Include="..\..\Business\Hexagonal.Business.Impl\Hexagonal.Business.Impl.csproj" />
+    <ProjectReference Include="..\..\Modules\Hexagonal.Persistence.InMemory\Hexagonal.Persistence.InMemory.csproj" />
   </ItemGroup>
 
 </Project>

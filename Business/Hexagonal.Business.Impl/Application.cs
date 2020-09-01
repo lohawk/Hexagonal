@@ -1,14 +1,14 @@
-﻿using Hexagonal.Application.Impl.Item;
-using Hexagonal.Application.Interface;
-using Hexagonal.Application.Interface.Item;
+﻿using Hexagonal.Business.Impl.Item;
+using Hexagonal.Business.Interface;
+using Hexagonal.Business.Interface.Item;
 using Hexagonal.Persistence.Interface;
 using System;
 
-namespace Hexagonal.Application.Impl
+namespace Hexagonal.Business.Impl
 {
     public class Application : IApplication
     {
-        private IHandleItemState _stateManager;
+        private readonly IHandleItemState _stateManager;
 
         public Application(IHandleItemState stateManager) => 
             _stateManager = stateManager;
@@ -18,7 +18,6 @@ namespace Hexagonal.Application.Impl
             where TResp : IApplicationResponse
             where TReq : IApplicationRequest
         {
-
             // Map all the domain handlers 
             // Normally we'd use infrastructure / framework to do this like Mediatr
             return request switch

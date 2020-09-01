@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Business\Hexagonal.Business.Interface\Hexagonal.Business.Interface.csproj" />
+    <ProjectReference Include="..\..\Business\ModuleInterfaces\Hexagonal.Web.Interface\Hexagonal.Web.Interface.csproj" />
+  </ItemGroup>
+
+</Project>
