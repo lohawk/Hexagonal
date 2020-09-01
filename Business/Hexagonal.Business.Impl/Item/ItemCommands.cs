@@ -6,7 +6,7 @@ namespace Hexagonal.Business.Impl.Item
 {
     public static class ItemCommands 
     {
-        public static ItemDTO Execute(CreateItem ci, IHandleItemState stateManager)
+        public static BusinessItem Execute(CreateItem ci, IHandleItemState stateManager)
         {
             // Example of validation
             if (string.IsNullOrWhiteSpace(ci.Data)) return null;
@@ -21,7 +21,7 @@ namespace Hexagonal.Business.Impl.Item
                 ModifiedAt = item.ModifiedAt
             });
 
-            return new ItemDTO
+            return new BusinessItem
             {
                 Id = persistedItem.Id,
                 Data = persistedItem.Data

@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Hexagonal.Persistence.Interface\Hexagonal.Persistence.Interface.csproj" />
+    <ProjectReference Include="..\..\Business\ModuleInterfaces\Hexagonal.Persistence.Interface\Hexagonal.Persistence.Interface.csproj" />
   </ItemGroup>
 
 </Project>

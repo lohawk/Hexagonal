@@ -7,9 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Business\Hexagonal.Business.Impl\Hexagonal.Business.Impl.csproj" />
-    <ProjectReference Include="..\..\Business\Hexagonal.Business.Interface\Hexagonal.Business.Interface.csproj" />
-    <ProjectReference Include="..\..\Shell\Hexagonal.Persistence.InMemory\Hexagonal.Persistence.InMemory.csproj" />
-    <ProjectReference Include="..\..\Shell\Hexagonal.Persistence.Interface\Hexagonal.Persistence.Interface.csproj" />
+    <ProjectReference Include="..\..\Modules\Hexagonal.Persistence.InMemory\Hexagonal.Persistence.InMemory.csproj" />
   </ItemGroup>
 
 </Project>

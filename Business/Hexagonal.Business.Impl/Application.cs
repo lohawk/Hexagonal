@@ -18,7 +18,6 @@ namespace Hexagonal.Business.Impl
             where TResp : IApplicationResponse
             where TReq : IApplicationRequest
         {
-
             // Map all the domain handlers 
             // Normally we'd use infrastructure / framework to do this like Mediatr
             return request switch
